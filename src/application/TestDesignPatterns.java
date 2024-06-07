@@ -4,6 +4,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 import designPatterns.FactoryProduct;
+import designPatterns.SingletonSchedule;
 import entites.Person;
 import entites.Product;
 import services.TypeProduct;
@@ -31,6 +32,8 @@ public class TestDesignPatterns {
 		System.out.println(person);
 		
 		System.out.println();
+		
+		// Testing Factory Method
 		Product fisicalProduct = new FactoryProduct().getInstance(TypeProduct.FISICAL);
 		
 		Product digitalProduct = new FactoryProduct().getInstance(TypeProduct.DIGITAL);
@@ -38,8 +41,23 @@ public class TestDesignPatterns {
 		System.out.println(fisicalProduct);
 		System.out.println(digitalProduct);
 		
+		System.out.println();
+		
+		//Testin Singleton 
+		SingletonSchedule schedule = SingletonSchedule.getInstance();
+		reserveDay("SUNDAY");
+		reserveDay("FRIDAY");
+		System.out.println(schedule.hashCode());
 		
 		
+	}
+	
+	// Show that the object schedule2 is the same of schedule, has only one instance.
+	public static void reserveDay(String day) {
+		SingletonSchedule schedule2 = SingletonSchedule.getInstance();
+		schedule2.busyDay(day);
+		System.out.println(schedule2.getDays());
+		System.out.println(schedule2.hashCode());
 	}
 
 }
