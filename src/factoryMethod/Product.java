@@ -1,4 +1,4 @@
-package entites;
+package factoryMethod;
 
 public class Product {
 	

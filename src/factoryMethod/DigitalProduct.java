@@ -1,6 +1,4 @@
-package entites;
-
-import services.TypeProduct;
+package factoryMethod;
 
 public class DigitalProduct extends Product{
 	

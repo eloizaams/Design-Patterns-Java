@@ -1,9 +1,4 @@
-package designPatterns;
-
-import entites.FisicalProduct;
-import entites.Product;
-import entites.DigitalProduct;
-import services.TypeProduct;
+package factoryMethod;
 
 public class FactoryProduct {
 	

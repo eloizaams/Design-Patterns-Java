@@ -1,4 +1,4 @@
-package designPatterns;
+package singleton;
 
 import java.time.DayOfWeek;
 import java.util.HashMap;

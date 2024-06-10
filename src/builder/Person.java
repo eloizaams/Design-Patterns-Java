@@ -1,4 +1,4 @@
-package entites;
+package builder;
 
 
 public class Person {

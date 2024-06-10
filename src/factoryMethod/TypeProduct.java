@@ -1,4 +1,4 @@
-package services;
+package factoryMethod;
 
 public enum TypeProduct {
 	
