@@ -2,7 +2,6 @@ package chainOfResponsibility.solution;
 
 import java.math.BigDecimal;
 
-import chainOfResponsibility.Brand;
 import chainOfResponsibility.Car;
 
 public class NoRightDiscount extends CarDiscount{
